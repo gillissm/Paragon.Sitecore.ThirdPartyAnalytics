@@ -6,6 +6,9 @@ These required third party tracking values usually are injected in one of two wa
 
 The second commonly employed method is the usage of a configuration file. A component is developed or code is placed directly in the main layout that reads the required ID values and even possibly some form of JavaScript snippets that are injected at page load. This method is a step in the right direction, but still requires the development team to be fully aware of the correct IDs for the environment and site. [This use to be my preferred method until I woke-up realizing there was a better way, which now sits in-front of you.]
 
+## Short Description
+Sitecore MVC component that allows for the management of Google Analytics and other third party tracking products to be managed from the Sitecore content tree.
+
 ## Solution Requirements
 * Visual Studio 2015
 * .NET 4.5.2

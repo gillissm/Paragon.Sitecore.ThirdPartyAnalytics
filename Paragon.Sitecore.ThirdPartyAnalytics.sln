@@ -9,6 +9,7 @@ Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master", "TDS.Master\TD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documents", "_Documents", "{2BF9145D-2292-4DF5-B554-E6F45C69CE77}"
 	ProjectSection(SolutionItems) = preProject
+		_Documents\LICENSE.md = _Documents\LICENSE.md
 		_Documents\Paragon.Sitecore.ThirdPartyAnalytics-1.zip = _Documents\Paragon.Sitecore.ThirdPartyAnalytics-1.zip
 		_Documents\Paragon.Sitecore.ThirdPartyAnalytics.xml = _Documents\Paragon.Sitecore.ThirdPartyAnalytics.xml
 		_Documents\README.md = _Documents\README.md
