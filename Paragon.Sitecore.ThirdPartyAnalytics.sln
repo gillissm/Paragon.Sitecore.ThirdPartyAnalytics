@@ -10,8 +10,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documents", "_Documents", "{2BF9145D-2292-4DF5-B554-E6F45C69CE77}"
 	ProjectSection(SolutionItems) = preProject
 		_Documents\LICENSE.md = _Documents\LICENSE.md
-		_Documents\Paragon.Sitecore.ThirdPartyAnalytics-1.zip = _Documents\Paragon.Sitecore.ThirdPartyAnalytics-1.zip
 		_Documents\Paragon.Sitecore.ThirdPartyAnalytics.xml = _Documents\Paragon.Sitecore.ThirdPartyAnalytics.xml
+		_Documents\Paragon.Sitecore.ThirdPartyAnalytics_8.0.zip = _Documents\Paragon.Sitecore.ThirdPartyAnalytics_8.0.zip
+		_Documents\Paragon.Sitecore.ThirdPartyAnalytics_8.2.zip = _Documents\Paragon.Sitecore.ThirdPartyAnalytics_8.2.zip
 		_Documents\README.md = _Documents\README.md
 	EndProjectSection
 EndProject

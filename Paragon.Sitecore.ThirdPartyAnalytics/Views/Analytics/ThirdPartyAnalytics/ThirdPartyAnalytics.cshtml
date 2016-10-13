@@ -5,13 +5,18 @@
 
 @model Sitecore.Mvc.Presentation.RenderingModel
 
-@if (Model?.Item?.IsDerived(ThirdPartyAnalyticsConstants.TemplateId) ?? false)
+@if(Model==null || Model.Item==null || !Model.Item.IsDerived(ThirdPartyAnalyticsConstants.TemplateId))
 {
     return;
 }
 
 
-@*Check that a Google Id has been set and that we are NOT in editign mode*@
+@*
+    Check that a Google Id has been set and that we are NOT in editing mode
+
+    If using Sitecore 7.2, 7.5, 8.0, or 8.1 the view change the IF to the following:
+        if (!String.IsNullOrWhiteSpace(Model.Item.Fields[ThirdPartyAnalyticsConstants.GoogleAnalyticsIDFieldName].Value) && !Sitecore.Context.PageMode.IsPageEditor)
+*@
 @if (!String.IsNullOrWhiteSpace(Model.Item.Fields[ThirdPartyAnalyticsConstants.GoogleAnalyticsIDFieldName].Value) && !Sitecore.Context.PageMode.IsExperienceEditor)
 {
     <script>

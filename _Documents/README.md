@@ -19,8 +19,10 @@ Sitecore MVC component that allows for the management of Google Analytics and ot
 
 ## What's Included
 * TDS project for Sitecore artifact syncing
-* Sitecore package as found in _Documents folder
 * Full source code to allow for extension with other third party applications
+* Sitecore package as found in _Documents folder
+    * If you are running Sitecore 7.2, 7.5, 8.0, or 8.1 install the Sitecore package 'Paragon.Sitecore.ThirdPartyAnalytics_8.0.zip'
+    * If you are running Sitecore 8.2+ install the 'Paragon.Sitecore.ThirdPartyAnalytics_8.2.zip'
 
 ### Sitecore Artifacts
 When either installing from the package or syncing from TDS the following items will be added to your Sitecore content tree.
