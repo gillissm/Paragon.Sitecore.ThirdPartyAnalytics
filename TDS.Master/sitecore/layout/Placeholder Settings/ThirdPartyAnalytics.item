@@ -1,0 +1,45 @@
+----item----
+version: 1
+id: {7BAA6B00-C3DE-4CA2-A297-5F55E667E492}
+database: master
+path: /sitecore/layout/Placeholder Settings/ThirdPartyAnalytics
+parent: {1CE3B36C-9B0C-4EB5-A996-BFCB4EAA5287}
+name: ThirdPartyAnalytics
+master: {00000000-0000-0000-0000-000000000000}
+template: {C3B037A0-46E5-4B67-AC7A-A144B962A56F}
+templatekey: Placeholder Settings Folder
+created: 20161012T172053:636118896537770000
+
+----version----
+language: en
+version: 1
+revision: ab6e9ba8-9344-4b77-bd91-581c6ea267aa
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20161012T172053Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+ab6e9ba8-9344-4b77-bd91-581c6ea267aa
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20161012T172053Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\admin

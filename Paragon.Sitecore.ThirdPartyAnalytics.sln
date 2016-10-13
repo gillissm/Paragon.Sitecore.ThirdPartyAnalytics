@@ -5,6 +5,15 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paragon.Sitecore.ThirdPartyAnalytics", "Paragon.Sitecore.ThirdPartyAnalytics\Paragon.Sitecore.ThirdPartyAnalytics.csproj", "{EAE057ED-FFBB-4CE3-B2C0-71FA10C05411}"
 EndProject
+Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "TDS.Master", "TDS.Master\TDS.Master.scproj", "{86DC04FA-8E17-4149-AC0E-6DC92EF483FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Documents", "_Documents", "{2BF9145D-2292-4DF5-B554-E6F45C69CE77}"
+	ProjectSection(SolutionItems) = preProject
+		_Documents\Paragon.Sitecore.ThirdPartyAnalytics-1.zip = _Documents\Paragon.Sitecore.ThirdPartyAnalytics-1.zip
+		_Documents\Paragon.Sitecore.ThirdPartyAnalytics.xml = _Documents\Paragon.Sitecore.ThirdPartyAnalytics.xml
+		_Documents\README.md = _Documents\README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +24,12 @@ Global
 		{EAE057ED-FFBB-4CE3-B2C0-71FA10C05411}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAE057ED-FFBB-4CE3-B2C0-71FA10C05411}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAE057ED-FFBB-4CE3-B2C0-71FA10C05411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DC04FA-8E17-4149-AC0E-6DC92EF483FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DC04FA-8E17-4149-AC0E-6DC92EF483FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DC04FA-8E17-4149-AC0E-6DC92EF483FC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{86DC04FA-8E17-4149-AC0E-6DC92EF483FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DC04FA-8E17-4149-AC0E-6DC92EF483FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86DC04FA-8E17-4149-AC0E-6DC92EF483FC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

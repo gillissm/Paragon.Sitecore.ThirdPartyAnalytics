@@ -1,0 +1,132 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Paragon.Sitecore.ThirdPartyAnalytics</PackageName>
+      <Author>Scott Gillis</Author>
+      <Version>1</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme># Third Party Analytics Component
+
+After hearing stories from Sitecore users and developers about the struggles they dealt with trying to manage third party tracking IDs (such as those used by Google Analytics) between environments and sites, and experiencing the headaches in my own development the creation of this control was born.
+
+These required third party tracking values usually are injected in one of two ways. The first method commonly used is to place the tracking code directly on the main layout. This is easy as it ensures the tracking code shows for all pages and only loads once. The downfall is as source code migrates through environments or additional the organization grows and additional sites are added into Sitecore the management of proper tracking IDs become a developer challenge to maintain.
+
+The second commonly employed method is the usage of a configuration file. A component is developed or code is placed directly in the main layout that reads the required ID values and even possibly some form of JavaScript snippets that are injected at page load. This method is a step in the right direction, but still requires the development team to be fully aware of the correct IDs for the environment and site. [This use to be my preferred method until I woke-up realizing there was a better way, which now sits in-front of you.]
+
+## Solution Requirements
+* Visual Studio 2015
+* .NET 4.5.2
+* [Access to the Sitecore NuGet feed](https://doc.sitecore.net/sitecore_experience_platform/developing/developing_with_sitecore/sitecore_public_nuget_packages_faq), https://doc.sitecore.net/sitecore_experience_platform/developing/developing_with_sitecore/sitecore_public_nuget_packages_faq
+* Optional Team Development For Sitecore (TDS)
+* Default build is targeting Sitecore 8.2 Initial Release (rev. 160729)
+* Sitecore site built on MVC
+
+## What's Included
+* TDS project for Sitecore artifact syncing
+* Sitecore package as found in _Documents folder
+* Full source code to allow for extension with other third party applications
+
+### Sitecore Artifacts
+When either installing from the package or syncing from TDS the following items will be added to your Sitecore content tree.
+* Template named 'ThirdPartyAnalytics'
+    * Found at /sitecore/templates/Modules/ThirdPartyAnalytics/Anayltics/ThirdPartyAnalytics
+* View Rendering named 'ThirdPartyAnalytics'
+    * Found at /sitecore/layout/Renderings/Modules/ThirdPartyAnalytics/Analytics/ThirdPartyAnalytics
+* Placeholder Setting named 'headplaceholder'
+    * Found at /sitecore/layout/Placeholder Settings/ThirdPartyAnalytics/headplaceholder
+
+### File System
+The deployment involves two file for the file system.
+* Paragon.Sitecore.ThirdPartyAnalytics.dll
+    * created in the web root BIN directory
+* ThirdPartyAnalytics.cshtml
+    * created at &lt; webroot &gt;/Views/Analytics/ThirdPartyAnalytics/ThirdPartyAnalytics.cshtml
+
+## How to Use
+1. Install the included Sitecore package or sync via TDS
+2. Add the new view rendering 'ThirdPartyAnalytics' to one or more placeholder settings
+3. Create an item based on 'ThirdPartyAnalytics' template
+4. Add the 'ThirdPartyAnalytics' view to one or more pages and/or template standard values and associate to the proper data source as created in step 3
+
+
+## Licensed Under
+MIT License
+
+Copyright (c) 2016 Scott Gillis
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xitems>
+      <Entries>
+        <x-item>/master/sitecore/layout/Placeholder Settings/ThirdPartyAnalytics/{7BAA6B00-C3DE-4CA2-A297-5F55E667E492}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Placeholder Settings/ThirdPartyAnalytics/headplaceholder/{6387B081-9812-40D8-9FD8-E341A1D64001}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Modules/ThirdPartyAnalytics/{D6C1010D-BC11-41CC-9689-0ED8CF05F824}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Modules/ThirdPartyAnalytics/Analytics/{609BF2DD-6482-4286-B6BB-3F9B8562F436}/invariant/0</x-item>
+        <x-item>/master/sitecore/layout/Renderings/Modules/ThirdPartyAnalytics/Analytics/ThirdPartyAnalytics/{D823094D-C4BF-4D75-A4C8-DD0A93376E03}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/ThirdPartyAnalytics/{B32883C5-9683-4229-9908-A23BAE0DE467}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/ThirdPartyAnalytics/Anayltics/{A5327E91-CCA7-4992-AFD5-40441F1659A2}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/ThirdPartyAnalytics/Anayltics/ThirdPartyAnalytics/{44E49BC7-9A57-4341-A47C-2FA1E9C5A0A6}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/ThirdPartyAnalytics/Anayltics/ThirdPartyAnalytics/Google Analytics/{2390CD0A-93DB-4BED-880B-F0200B027C71}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/ThirdPartyAnalytics/Anayltics/ThirdPartyAnalytics/Google Analytics/GoogleAnalyticsID/{6BBB5892-BA93-4C39-BF26-8156377B9789}/invariant/0</x-item>
+        <x-item>/master/sitecore/templates/Modules/ThirdPartyAnalytics/Anayltics/ThirdPartyAnalytics/Google Analytics/GoogleTagManagerID/{869E2BD9-9501-47AE-945B-0890D79B70DB}/invariant/0</x-item>
+      </Entries>
+      <SkipVersions>False</SkipVersions>
+      <Converter>
+        <ItemToEntryConverter>
+          <Transforms />
+        </ItemToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Paragon</Name>
+    </xitems>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Paragon.Sitecore.ThirdPartyAnalytics.dll</x-item>
+        <x-item>/Views/Analytics/ThirdPartyAnalytics/ThirdPartyAnalytics.cshtml</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Paragon</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
